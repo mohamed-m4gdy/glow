@@ -121,9 +121,11 @@ header .menu button .navbar-toggler-icon {
     border: 1px solid #626263;
     padding: 7px 34px;
     border-radius: 3px;
+    transition: all 1s ease;
 }
 .navbar .lang span:hover {
     cursor: pointer;
+    border-color: #FFD100;
 }
 @media (max-width:992px) {
     .navbar .lang span {
@@ -583,6 +585,11 @@ footer .footer .images .icons i {
     width: 40px;
     line-height: 2.2;
     border-radius: 50%;
+    transition: all 1s ease;
+}
+footer .footer .images .icons i:hover {
+    cursor: pointer;
+    border-color: #FFD100;
 }
 footer .footer .images .lst {
     margin-top: 65px;
