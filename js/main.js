@@ -18,7 +18,7 @@ function topFunction() {
 // Start NavBar
 $(function () {
   var winH    = $(window).height();
-$('.overlay').height(winH);
+$('.overlay').height(winH + ('9px'));
 
 $('.btn').click(function() {
   $('.overlay').css("display", "block");
