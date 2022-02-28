@@ -70,7 +70,7 @@ header .menu button .navbar-toggler-icon {
 }
 .navbar-nav {
     float: right;
-    margin-right: -25px;
+    margin-top:20px;
 }
 .navbar-nav .nav-link {
     font-size: 16px;
