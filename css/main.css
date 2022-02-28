@@ -371,6 +371,7 @@ section .see i {
     align-items: center;
     border-bottom: 1px solid #9f9b9b;
     margin-bottom: 90px;
+    padding-bottom: 20px;
 }
 @media (max-width:768px) {
     .works .upp {
@@ -616,6 +617,7 @@ footer .footer .images .lst div {
     background-color: #3A3A3C;
     top: 0;
     display: none;
+    transition: all 1s ease;
 }
 .overlay i {
     position: absolute;
@@ -624,12 +626,14 @@ footer .footer .images .lst div {
     font-size: 39px;
     color: #fff;
     cursor: pointer;
+    transition: all 1s ease;
 }
 .test {
     text-align: center;
     bottom: 15px;
     background-color: #3A3A3C;
     margin-top: 100px;
+    transition: all 1s ease;
 }
 .test .nav-link {
     font-size: 16px;
