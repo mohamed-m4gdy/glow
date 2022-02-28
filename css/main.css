@@ -346,9 +346,14 @@ section .see i {
     max-width: 50%;
 }
 .works .upp .right h2 {
-    font-size: 117px;
+    font-size: 100px;
     color: #fff;
     -webkit-text-stroke: 2px #000;
+}
+@media (max-width:576px) {
+    .works .upp .right h2 {
+        margin-right: 20px;
+    }
 }
 .works .upp h3 {
     margin-top: 45px;
