@@ -70,12 +70,17 @@ header .menu button .navbar-toggler-icon {
     }
 }
 .navbar-nav {
+<<<<<<< HEAD
     text-align: center;
 }
 @media (max-width:992px) {
     .navbar-nav{
         display: none;
     }
+=======
+    float: right;
+    margin-top:20px;
+>>>>>>> b89d03c6710a7db7673eb3d920cfd0e3fd06f7cb
 }
 .navbar-nav .nav-link {
     font-size: 16px;
