@@ -23,6 +23,7 @@
 }
 body {
     font-family: "webfont";
+    position: relative;
 }
 
 * {
@@ -69,8 +70,12 @@ header .menu button .navbar-toggler-icon {
     }
 }
 .navbar-nav {
-    float: right;
-    margin-right: -25px;
+    text-align: center;
+}
+@media (max-width:992px) {
+    .navbar-nav{
+        display: none;
+    }
 }
 .navbar-nav .nav-link {
     font-size: 16px;
@@ -598,9 +603,70 @@ footer .footer .images .lst div {
     color: white;
     cursor: pointer;
     padding: 15px;
-  }
-  
-  #myBtn:hover {
+}
+#myBtn:hover {
     background-color: #555;
     border: none;
-  }
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: #3A3A3C;
+    top: 0;
+    display: none;
+}
+.overlay i {
+    position: absolute;
+    right: 47px;
+    top: 20px;
+    font-size: 39px;
+    color: #fff;
+    cursor: pointer;
+}
+.test {
+    text-align: center;
+    bottom: 15px;
+    background-color: #3A3A3C;
+    margin-top: 100px;
+}
+.test .nav-link {
+    font-size: 16px;
+    margin-left: 20px;
+    color: #a9a9a9 !important;
+    position: relative;
+}
+
+.test .nav-link:hover {
+    color: #FFD100 !important;
+    -webkit-transition: all 1.2s ease;
+    -moz-transition: all 1.2s ease;
+    -ms-transition: all 1.2s ease;
+    -o-transition: all 1.2s ease;
+    transition:  all 1.2s ease;
+}
+.test .nav-link:before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    border-radius: 3px;
+    background-color: #FFD100;
+    bottom: -5px;
+    width: 72%;
+    right: 14%;
+    opacity: 0;
+    -webkit-transition: opacity 0.7s ease;
+    -moz-transition: opacity 0.7s ease;
+    -ms-transition: opacity 0.7s ease;
+    -o-transition: opacity 0.7s ease;
+    transition:  opacity 0.7s ease;
+}
+.test .nav-link:hover::before {
+    opacity: 1;
+}
+@media (max-width:992px) {
+    .test .nav-link:hover:before {
+        opacity: 0;
+    }
+}

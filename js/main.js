@@ -15,3 +15,19 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 // End Scroll To Top
+// Start NavBar
+$(function () {
+  var winH    = $(window).height();
+$('.overlay').height(winH);
+
+$('.btn').click(function() {
+  $('.overlay').css("display", "block");
+});
+$('.rmv').click(function() {
+  $('.overlay').css("display", "none");
+});
+});
+$( window ).scroll(function() {
+  $('.overlay').css("display", "none");
+});
+// End NavBar
