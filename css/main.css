@@ -64,7 +64,7 @@ header .menu button .navbar-toggler-icon {
 }
 @media (max-width:555px) {
     header .menu button {
-        margin-left: 230px;
+        margin-left: 255px;
         margin-top: -40px;
     }
 }
